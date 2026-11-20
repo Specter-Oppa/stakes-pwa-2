@@ -1,0 +1,5 @@
+CLERK_SECRET_KEY=sk_test_replace_me
+DODO_PAYMENTS_API_KEY=dodo_test_replace_me
+DODO_PAYMENTS_WEBHOOK_KEY=whsec_dGVzdF9zZWNyZXQ=
+DODO_PAYMENTS_ENVIRONMENT=test_mode
+DODO_PRODUCT_ID=pdt_replace_with_your_product_id

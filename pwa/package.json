@@ -1,0 +1,27 @@
+{
+  "name": "stakes-web",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "pages:dev": "wrangler pages dev dist",
+    "deploy": "npm run build && wrangler pages deploy dist --project-name stakes-pwa",
+    "d1:create": "wrangler d1 create stakes-subscriptions",
+    "d1:migrate:local": "wrangler d1 migrations apply stakes-subscriptions --local",
+    "d1:migrate:remote": "wrangler d1 migrations apply stakes-subscriptions --remote"
+  },
+  "dependencies": {
+    "@clerk/backend": "^3.29.0",
+    "@clerk/react": "^6.18.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.0",
+    "wrangler": "^4.162.0"
+  }
+}

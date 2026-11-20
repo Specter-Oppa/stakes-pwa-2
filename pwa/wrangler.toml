@@ -1,0 +1,12 @@
+name = "stakes-pwa"
+pages_build_output_dir = "./dist"
+compatibility_date = "2026-11-14"
+
+[vars]
+DODO_PAYMENTS_ENVIRONMENT = "test_mode"
+
+[[d1_databases]]
+binding = "DATABASE"
+database_name = "stakes-subscriptions"
+database_id = "00000000-0000-0000-0000-000000000000"
+migrations_dir = "./migrations"
